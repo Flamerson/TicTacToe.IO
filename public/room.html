@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="container">
+        <h1 class="text-game" id="player">Tic Tac Toe</h1>
+        <p class="player-name" id="player1"></p>
+        <p class="player-name" id="player2">Esperando player 2</p>
+        <div class="game-area" id="game-area">
+            
+        </div>
+    </div>
+
+    <div class="disable" id="win-game">
+        <h1 class="text-win" id="textWin"></h1>
+        <button class="win-button" onclick="restartGame()" id="win-button">Rematch</button>
+    </div>
+
+    <script src="/connection.mjs" ></script>
+</body>
+</html>

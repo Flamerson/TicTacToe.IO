@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="/index.css">
+    <title>Document</title>
+</head>
+<body> 
+
+    <div class="forms">
+        <form action="/room" method="POST" class="inputs">
+            <p>Create room</p>
+            <input name="name" type="text" placeholder="name" required>
+            <button type="submit">create room</button>
+        </form>
+        
+        <form action="/enter" method="post" class="inputs">
+            <p>Enter in room</p>
+            <input name="code" type="text" placeholder="code" required>
+            <input name="name" type="text" placeholder="name" required>
+            <button type="submit">enter room</button>
+        </form>
+    </div>
+
+</body>
+</html>
